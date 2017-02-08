@@ -1,0 +1,47 @@
+html, body {
+    /*height: 100%;*/
+}
+
+#layout1 {
+    background-color: grey;
+    height: 100vh;
+    display: flex;
+    flex-wrap: wrap;
+    padding: 3px;
+}
+
+
+nav {
+    width: 100%;
+    height: 4em;
+}
+
+aside {
+    flex-grow: 1;
+    align-self: flex-start;
+}
+main {
+    flex-grow: 3;
+    align-self: stretch;
+}
+
+#layout2 {
+    background-color: grey;
+
+}
+
+#layout3 {
+    background-color: grey;
+
+}
+
+#layout4 {
+    background-color: grey;
+
+}
+
+nav, aside, main {
+    background: lightgrey;
+    padding: 3px;
+    margin: 2px;
+}
