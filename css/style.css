@@ -10,15 +10,15 @@ html, body {
 }
 
 
-nav {
+#layout1 nav {
     width: 100%;
 }
 
-aside {
+#layout1 aside {
     flex-grow: 1;
     align-self: flex-start;
 }
-main {
+#layout1 main {
     flex-grow: 3;
     align-self: stretch;
     height: 100vh;
@@ -26,21 +26,155 @@ main {
 
 #layout2 {
     background-color: grey;
+    display: flex;
+    flex-wrap: wrap;
+    padding: 3px;
+
+}
+
+#layout2 nav {
+    width: 100%;
+}
+
+#layout2 aside {
+    flex-grow: 1;
+    align-self: stretch;
+
+}
+
+#layout2 main {
+    flex-grow: 3;
+    align-self: stretch;
+    height: 100vh;
 
 }
 
 #layout3 {
     background-color: grey;
+    display: flex;
+    flex-wrap: wrap;
+    padding: 3px;
+}
 
+#layout3 nav {
+    width: 100%;
+}
+
+#layout3 aside {
+    flex-grow: 1;
+    align-self: flex-start;
+}
+#layout3 main {
+    height: 100vh;
+    flex-grow: 3;
+    align-self: stretch;
+}
+
+#layout3 .order-first {
+    order: 2;
+}
+
+#layout3 .order-last {
+    order: 1;
 }
 
 #layout4 {
     background-color: grey;
+    display: flex;
+    flex-wrap: wrap;
+    padding: 3px;
 
+}
+
+#layout4 nav {
+    width: 100%;
+}
+
+#layout4 aside {
+    flex-grow: 1;
+    align-self: stretch;
+
+}
+
+#layout4 main {
+    flex-grow: 3;
+    align-self: stretch;
+    height: 100vh;
+
+}
+
+#layout4 .order-first {
+    order: 2;
+}
+
+#layout4 .order-last {
+    order: 1;
 }
 
 nav, aside, main {
     background: lightgrey;
     padding: 3px;
     margin: 2px;
+}
+
+
+/*Mobile*/
+
+#mobilelayout1 {
+    background-color: grey;
+    display: flex;
+     
+}
+#mobilelayout1 nav {
+    width: 100%;
+}
+
+#mobilelayout1 aside {
+    flex-grow: 1;
+    align-self: stretch;
+
+}
+
+#mobilelayout1 main {
+    flex-grow: 3;
+    align-self: stretch;
+    height: 100vh;
+
+}
+
+#mobilelayout1 .order-first {
+    order: 2;
+}
+
+#mobilelayout1 .order-last {
+    order: 1;
+}
+
+#mobilelayout2 {
+    background-color: grey;
+    display: flex;
+}
+#mobilelayout2 nav {
+    width: 100%;
+}
+
+#mobilelayout2 aside {
+    flex-grow: 1;
+    align-self: stretch;
+
+}
+
+#mobilelayout2 main {
+    flex-grow: 3;
+    align-self: stretch;
+    height: 100vh;
+
+}
+
+#mobilelayout2 .order-first {
+    order: 2;
+}
+
+#mobilelayout2 .order-last {
+    order: 1;
 }
